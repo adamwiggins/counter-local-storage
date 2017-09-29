@@ -1,11 +1,10 @@
 port module Main exposing (..)
 
-import Html exposing (div, button, text)
-import Html.App exposing (programWithFlags)
+import Html exposing (div, button, text, programWithFlags)
 import Html.Events exposing (onClick)
 
 
-main : Program (Maybe Model)
+main : Program (Maybe Model) Model Msg
 main =
     programWithFlags
         { init = init
